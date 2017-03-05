@@ -5,8 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Peso en otros planetas</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <h1>Calcular tu peso en otro planeta</h1>
+  <br>
+<section>
+  <form>
+    <div>
+        <label for="peso">Ingresa tu peso en kg: </label>
+        <input id="peso" type="text" pattern="^[0-9]+"required>
+      </div><br>
+    <div>
+      <select id = "planeta" required>
+      <option value="">escoge el planeta</option>
+      <option value="1">Mercurio</option>
+      <option value="2">Venus</option>
+      <option value="3">Tierra</option>
+      <option value="4">Marte</option>
+      <option value="5">Jùpiter</option>
+      <option value="6">Saturno</option>
+      <option value="7">Urano</option>
+      <option value="8">Neptuno</option>
+      <option value="9">Plutòn</option>
+    </select>
+    </div>
+    <br><br>
+    <button type="submit" onclick="calcularPeso();">Calcular Peso</button>
+  </form>
+</section>
 
+<script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>
